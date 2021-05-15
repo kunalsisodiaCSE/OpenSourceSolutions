@@ -11,25 +11,16 @@ g) Negation h) NAND i)NOR
 */
 class operation
 {
-    long A, B;
+    long A, B;      //long type declaration.
 
 public:
-    operation(long x, long y)
+    operation(long x, long y)   //constructor to initialise values
     {
         A = x;
         B = y;
     }
-    int no_of_digits(int n)
-    {
-        int flag = 0;
-        while (n != 0)
-        {
-            flag++;
-            n /= 10;
-        }
-        return flag;
-    }
-    int decToBinary(int n)
+    
+    int decToBinary(int n)      //decimal to binary function.
     {
         int binaryNum[32];
         int i = 0;
@@ -45,7 +36,7 @@ public:
 
         return s;
     }
-    int BinaryTodec(int num)
+    int BinaryTodec(int num)        //binary to decimal function
     {
         int rem, temp, dec = 0, b = 1;
         temp = num;
@@ -62,7 +53,7 @@ public:
     {
         int a = BinaryTodec(A);
         int b = BinaryTodec(B);
-        int c = a & b;
+        int c = a & b;          //here & operator is used for perform AND operation between two digits,which gives output true only when both condition is true.
         cout << decToBinary(c);
     }
     void disjunction()
