@@ -1,0 +1,6 @@
+Question:
+Write a Program to accept the truth values of variables x and y, and print the truth table of
+the following logical operations:
+a) Conjunction b) Disjunction c) Exclusive OR
+d) Conditional e) Bi-conditional f) Exclusive NOR
+g) Negation h) NAND i)NOR 
